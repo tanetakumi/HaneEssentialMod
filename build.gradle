@@ -12,8 +12,8 @@ buildscript {
 apply plugin: 'net.minecraftforge.gradle'
 
 group = 'net.serveron.hane'
-version = '1.3.2'
-archivesBaseName = 'hane'
+version = '1.0.0'
+archivesBaseName = 'hane-1.16.5'
 
 sourceCompatibility = targetCompatibility = compileJava.sourceCompatibility = compileJava.targetCompatibility = '1.8'
 
@@ -118,7 +118,7 @@ jar {
         attributes([
                 "Specification-Title"     : "haneessential",
                 //"Specification-Vendor": "haneessential authors",
-                "Specification-Version"   : "1.3.2", // We are version 1 of ourselves
+                "Specification-Version"   : "1.0.0", // We are version 1 of ourselves
                 "Implementation-Title"    : project.name,
                 "Implementation-Version"  : project.version,
                 //"Implementation-Vendor": "haneessential authors",
