@@ -12,8 +12,8 @@ buildscript {
 apply plugin: 'net.minecraftforge.gradle'
 
 group = 'net.serveron.hane'
-version = '1.0-SNAPSHOT'
-archivesBaseName = 'HaneEssentialBackVer'
+version = '1.0.0'
+archivesBaseName = 'hane-1.12.2'
 
 sourceCompatibility = targetCompatibility = compileJava.sourceCompatibility = compileJava.targetCompatibility = '1.8'
 

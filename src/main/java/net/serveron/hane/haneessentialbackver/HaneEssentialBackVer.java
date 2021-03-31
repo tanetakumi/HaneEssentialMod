@@ -70,6 +70,7 @@ public class HaneEssentialBackVer {
                             .replace(" ","")
                             .replace(".","")
                             .replace("-","")
+                            .replace("-","")
                             .replace("(","")
                             .replace(")","")
                             .replace("zip","");
