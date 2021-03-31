@@ -43,16 +43,19 @@ public class HaneEssentialBackVer {
         StringBuilder result = new StringBuilder();
         String[] resourcesList = new File(mc.gameDir.getAbsolutePath(),"mods").list();
         if(resourcesList!=null){
-            for(String item : resourcesList){
-                String text = item.replaceAll("[0-9]", "")
-                        .replace(" ","")
-                        .replace(".","")
-                        .replace("-","")
-                        .replace("zip","");
-                result.append(text).append(":");
+            if(resourcesList.length!=0){
+                for(String item : resourcesList){
+                    String text = item.replaceAll("[0-9]", "")
+                            .replace(" ","")
+                            .replace(".","")
+                            .replace("-","")
+                            .replace("-","")
+                            .replace("(","")
+                            .replace(")","")
+                            .replace("jar","");
+                    result.append(text).append(":");
+                }
             }
-        } else {
-            result.append("modsNotExists").append(":");
         }
         return result.toString();
     }
@@ -61,16 +64,18 @@ public class HaneEssentialBackVer {
         StringBuilder result = new StringBuilder();
         String[] resourcesList = new File(mc.gameDir.getAbsolutePath(),"resourcepacks").list();
         if(resourcesList!=null){
-            for(String item : resourcesList){
-                String text = item.replaceAll("[0-9]", "")
-                        .replace(" ","")
-                        .replace(".","")
-                        .replace("-","")
-                        .replace("zip","");
-                result.append(text).append(":");
+            if(resourcesList.length!=0){
+                for(String item : resourcesList){
+                    String text = item.replaceAll("[0-9]", "")
+                            .replace(" ","")
+                            .replace(".","")
+                            .replace("-","")
+                            .replace("(","")
+                            .replace(")","")
+                            .replace("zip","");
+                    result.append(text).append(":");
+                }
             }
-        } else {
-            result.append("modsNotExists").append(":");
         }
         return result.toString();
     }
